@@ -1,1 +1,1 @@
-./build/Tests/TestMasMatrix $@
+ctest --test-dir build/Tests --output-on-failure -j

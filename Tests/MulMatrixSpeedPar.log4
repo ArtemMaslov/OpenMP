@@ -1,0 +1,103 @@
+export OMP_NUM_THREADS=4
+
+Matrix size           = 10
+Multiplications count = 100000
+
+Matrix size           = 100
+Multiplications count = 100
+
+Matrix size           = 512
+Multiplications count = 2
+
+Matrix size           = 1024
+Multiplications count = 1
+
+
+Matrix size = 10
+
+        MulABT_Par started.
+        Time = 1.954020 seconds.
+
+        MulABT_Par2 started.
+        Time = 2.169731 seconds.
+
+        MulABT_Par3 started.
+        Time = 3.212826 seconds.
+
+        MulABT_Par4 started.
+        Time = 2.220497 seconds.
+
+        MulABT_Par5 started.
+        Time = 2.199889 seconds.
+
+        MulABT_Par6 started.
+        Time = 2.222188 seconds.
+
+        MulABT_Seq started.
+        Time = 6.324151 seconds.
+
+Matrix size = 100
+
+        MulABT_Par started.
+        Time = 1.597573 seconds.
+
+        MulABT_Par2 started.
+        Time = 1.607922 seconds.
+
+        MulABT_Par3 started.
+        Time = 1.625844 seconds.
+
+        MulABT_Par4 started.
+        Time = 1.610631 seconds.
+
+        MulABT_Par5 started.
+        Time = 1.597835 seconds.
+
+        MulABT_Par6 started.
+        Time = 1.601004 seconds.
+
+        MulABT_Seq started.
+        Time = 5.902174 seconds.
+
+Matrix size = 512
+
+        MulABT_Par started.
+        Time = 4.574241 seconds.
+
+        MulABT_Par2 started.
+        Time = 4.422371 seconds.
+
+        MulABT_Par3 started.
+        Time = 4.613739 seconds.
+
+        MulABT_Par4 started.
+        Time = 4.509699 seconds.
+
+        MulABT_Par5 started.
+        Time = 4.310376 seconds.
+
+        MulABT_Par6 started.
+        Time = 4.308264 seconds.
+
+        MulABT_Seq started.
+        Time = 15.870989 seconds.
+
+Matrix size = 1024
+
+        MulABT_Par started.
+        Time = 17.869795 seconds.
+
+        MulABT_Par2 started.
+        Time = 17.021692 seconds.
+
+        MulABT_Par3 started.
+        Time = 17.817140 seconds.
+
+        MulABT_Par4 started.
+        Time = 19.042494 seconds.
+
+        MulABT_Par5 started.
+        Time = 19.322225 seconds.
+
+        MulABT_Par6 started.
+        Time = 19.081402 seconds.

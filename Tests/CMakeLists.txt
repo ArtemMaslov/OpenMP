@@ -1,39 +1,35 @@
-find_package (Boost COMPONENTS unit_test_framework REQUIRED)
-#include(CTest)
+#find_package (Boost COMPONENTS unit_test_framework REQUIRED)
 
-set(COMPILE_OPTIONS
-    -Werror
+###################################################################################################
 
-    -Wall
-    -Wextra
-    -Wpedantic
+function(add_my_executable TestSrcFile)
+    set(Target "Test${TestSrcFile}")
 
-    -Wcast-align
-    -Wcast-qual
-    -Wconversion
-    -Wctor-dtor-privacy
-    -Wenum-compare
-    -Wfloat-equal
-    -Wnon-virtual-dtor
-    -Wold-style-cast
-    -Woverloaded-virtual
-    -Wredundant-decls
-    -Wsign-conversion
-    -Wsign-promo
+    add_executable(${Target} "${TestSrcFile}.cpp")
+    target_link_libraries(${Target} PRIVATE LibMasMatrix)
 
-    -Wno-unused-variable
-    
-    -fPIC
-)
+    target_compile_options(${Target} PRIVATE ${COMPILE_DEBUG_OPTIONS})
+    target_link_options(${Target} PRIVATE ${LINK_DEBUG_OPTIONS})
+endfunction()
 
-set(SOURCES
-    MainTests.cpp
-)
+function(add_my_test TestSrcFile)
+    set(Target "Test${TestSrcFile}")
+    add_my_executable(${TestSrcFile})
+    add_test(NAME ${TestSrcFile} COMMAND ${Target})
+endfunction()
 
-add_executable(TestMasMatrix ${SOURCES})
-target_link_libraries(TestMasMatrix
-    PRIVATE LibMasMatrix ${Boost_UNIT_TEST_FRAMEWORK_LIBRARY}
-)
-target_compile_options(TestMasMatrix PRIVATE ${COMPILE_OPTIONS})
+###################################################################################################
 
-#add_test(NAME UnitTests COMMAND TestMasMatrix)
+add_my_test(ReadMatrix)
+add_my_test(ReadMatrix2)
+add_my_test(WriteMatrix)
+add_my_test(MulMatrix1)
+add_my_test(MulMatrix2)
+add_my_test(MulMatrix3)
+add_my_test(CtorThrow)
+add_my_test(MulMatrixPar)
+
+add_my_executable(MulMatrixSpeedSeq)
+add_my_executable(MulMatrixSpeedPar)
+
+###################################################################################################

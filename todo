@@ -1,0 +1,6 @@
+* Write matrix in binary mode.
+  Update generator to do n = 100/200 matrices.
+  Generate suit of matrices.
+
+* Write Strassen algorithm. Seq.
+  And Mul.

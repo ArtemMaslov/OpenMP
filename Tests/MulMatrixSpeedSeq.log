@@ -1,0 +1,62 @@
+Matrix size           = 10
+Multiplications count = 1001
+
+Matrix size           = 100
+Multiplications count = 2
+
+Matrix size           = 512
+Multiplications count = 1
+
+Matrix size           = 1024
+Multiplications count = 1
+
+Matrix size           = 2048
+Multiplications count = 1
+
+Matrix size           = 4096
+Multiplications count = 1
+
+
+Matrix size = 10
+
+        MulAB_Seq1 started.
+        Time = 0.069160seconds.
+
+        MulAB_Seq2 started.
+        Time = 0.075377seconds.
+
+        MulABT_Seq started.
+        Time = 0.063635seconds.
+
+Matrix size = 100
+
+        MulAB_Seq1 started.
+        Time = 0.120414seconds.
+
+        MulAB_Seq2 started.
+        Time = 0.125696seconds.
+
+        MulABT_Seq started.
+        Time = 0.117462seconds.
+
+Matrix size = 512
+
+        MulAB_Seq1 started.
+        Time = 8.628248seconds.
+
+        MulAB_Seq2 started.
+        Time = 8.416555seconds.
+
+        MulABT_Seq started.
+        Time = 7.811641seconds.
+
+Matrix size = 1024
+
+        MulAB_Seq1 started.
+        Time = 79.801280seconds.
+
+        MulAB_Seq2 started.
+        Time = 69.387520seconds.
+
+        MulABT_Seq started.
+        Time = 64.837249seconds.

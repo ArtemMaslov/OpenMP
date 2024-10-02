@@ -1,0 +1,47 @@
+no export export OMP_NUM_THREADS
+schedule(static)
+
+Matrix size           = 10
+Multiplications count = 100000
+
+Matrix size           = 100
+Multiplications count = 10
+
+Matrix size           = 512
+Multiplications count = 2
+
+Matrix size           = 1024
+Multiplications count = 1
+
+
+Matrix size = 10
+
+        MulABT_Par started.
+        Time = 2.691009seconds.
+
+        MulABT_Seq started.
+        Time = 6.410433seconds.
+
+Matrix size = 100
+
+        MulABT_Par started.
+        Time = 0.264310seconds.
+
+        MulABT_Seq started.
+        Time = 0.615368seconds.
+
+Matrix size = 512
+
+        MulABT_Par started.
+        Time = 7.946181seconds.
+
+        MulABT_Seq started.
+        Time = 16.478098seconds.
+
+Matrix size = 1024
+
+        MulABT_Par started.
+        Time = 27.101695seconds.
+
+        MulABT_Seq started.
+        Time = 65.521393seconds.
